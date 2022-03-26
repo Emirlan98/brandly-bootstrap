@@ -4,12 +4,6 @@ $accent: #d94343;
 $light: #fff;
 $dark: #333;
 
-.container{
-	max-width: 1140px;
-	margin: 0 auto;
-	padding: 0 15px;
-	// border: 1px solid red;
-}
 
 body {
   font-family: $main-font;
@@ -172,7 +166,7 @@ body {
   padding: 60px 0;
 
   &__item {
-	width: 350px;
+	// width: 350px;
 	min-height: 419px;
 	display: flex;
 	flex-direction: column;
@@ -299,13 +293,20 @@ body {
 @media screen and (max-width: 991.98px) {
   .header {
     &__nav-item + &__nav-item {
-      margin-left: 0;
+		 
+		text-align: end;
     }
+	 .active{
+		 text-align: end;
+	 }
   }
 }
 
 @media screen and (max-width: 575.98px) {
   .banner__title {
     letter-spacing: 0.2em;
+  }
+  .cat__item-title{
+	  margin: 0 auto;
   }
 }
